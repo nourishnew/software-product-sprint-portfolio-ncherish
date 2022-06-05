@@ -1,9 +1,85 @@
 #content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+  margin: 20px;
 }
+#nav_bar{
+    display: flex;
+    flex-direction: row;
+}
+#scroll_buttons{
+    margin-left: auto;
+}
+.flex_hor{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+button{
+    background-color: white;
+    border: none;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 25px;
+    font-size: medium;
+    font-weight: 400;
+    border-color: antiquewhite;
+    color:#fca61f; 
+}
+button:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+
+#pfp{
+    width: 50%;
+    height: 50%;
+}
+h1{
+    margin:auto;
+    color: #242d49;
+    font-family: 'Indie Flower', cursive;
+}
+h2{ 
+    color: #242d49; 
+    font-family: 'Nunito Sans', sans-serif;
+}
+h3{
+    color:#242d49;
+    font-family: 'Indie Flower', cursive;
+    font-size: small;
+
+}
+#experience_view{
+    width: 50%;
+    padding: 5%;
+    margin: 10px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    scrollbar-width: thin;
+    justify-content: space-around;
+}
+p{
+    color: #242d49;
+    font-family: 'Montserrat', sans-serif;
+}
+.card{
+    width: 50%;
+    padding: 5%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.coops{
+    padding: 5%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
 
 #greeting-container {
   margin-top: 20px;
 }
+
