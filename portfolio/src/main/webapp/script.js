@@ -11,18 +11,23 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+function moveToInterest(){
+    var element = document.getElementById("interest");
+    element.scrollIntoView({behavior: "smooth"});
 
-/**
- * Adds a random greeting to the page.
- */
-function addRandomGreeting() {
-  const greetings =
-      ['I love you 3000', 'BTS', 'Messi > CR7', 'Nothing. Have a good day'];
+}
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+function moveToEducation(){
+    var element = document.getElementById("education");
+    element.scrollIntoView({behavior: "smooth"});
+}
 
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+function moveToExperience(){
+    var element = document.getElementById("experience");
+    element.scrollIntoView({behavior: "smooth"});
+}
+
+function moveToAbout(){
+    var element = document.getElementById("about");
+    element.scrollIntoView({behavior: "smooth"});
 }

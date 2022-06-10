@@ -1,83 +1,90 @@
 #content {
   margin: 20px;
 }
-#nav_bar{
-    display: flex;
-    flex-direction: row;
-}
-#scroll_buttons{
-    margin-left: auto;
-}
-.flex_hor{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
 }
 
-button{
-    background-color: white;
-    border: none;
-    padding: 15px;
-    margin: 5px;
-    border-radius: 25px;
-    font-size: medium;
-    font-weight: 400;
-    border-color: antiquewhite;
-    color:#fca61f; 
-}
-button:hover{
-    cursor: pointer;
-    background-color: antiquewhite;
+#scroll-buttons {
+  margin-left: auto;
 }
 
-#pfp{
-    width: 50%;
-    height: 50%;
-}
-h1{
-    margin:auto;
-    color: #242d49;
-    font-family: 'Indie Flower', cursive;
-}
-h2{ 
-    color: #242d49; 
-    font-family: 'Nunito Sans', sans-serif;
-}
-h3{
-    color:#242d49;
-    font-family: 'Indie Flower', cursive;
-    font-size: small;
-
-}
-#experience_view{
-    width: 50%;
-    padding: 5%;
-    margin: 10px;
-    overflow-x: scroll;
-    display: flex;
-    flex-direction: row;
-    scrollbar-width: thin;
-    justify-content: space-around;
-}
-p{
-    color: #242d49;
-    font-family: 'Montserrat', sans-serif;
-}
-.card{
-    width: 50%;
-    padding: 5%;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.coops{
-    padding: 5%;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+.flex-hor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
+button {
+  border: 1px solid antiquewhite;
+  background-color: white;
+  border-radius: 25px;
+  color: #fca61f;
+  font: bold medium/1.2 Arial, sans-serif;
+  margin: 5px;
+  padding: 15px;
+}
 
+button:hover {
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
+#pfp {
+  height: 50%;
+  width: 50%;
+}
+
+h1 {
+  color: #242d49;
+  font-family: 'Indie Flower', cursive;
+  margin: auto;
+}
+
+h2 { 
+  color: #242d49; 
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h3 {
+  color:#242d49;
+  font-family: 'Indie Flower', cursive;
+  font-size: small;
+
+}
+
+#experience-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+  overflow-x: scroll;
+  padding: 5%;
+  scrollbar-width: thin;
+  width: 50%;
+}
+
+p {
+  color: #242d49;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 10px;
+  padding: 5%;
+  width: 50%;
+}
+
+.coops {
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 10px;
+  padding: 5%;
+}
 
 #greeting-container {
   margin-top: 20px;

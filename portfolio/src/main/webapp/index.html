@@ -1,44 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    s<meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
     <div id="content">
-        <div id = "nav_bar">
+        <div id = "nav-bar">
             <button >Home</button>
-            <div id="scroll_buttons">
-            <button>About</button>
-
-            <button>Experience</button>
-            <button>Education</button>
-            <button>Projects</button>
-            <button>Interests</button>
+            <div id="scroll-buttons">
+            <button id="about-button" onclick="moveToAbout()">About</button>
+            <button id="experience-button" onclick="moveToExperience()">Experience</button>
+            <button id="education-button" onclick="moveToEducation()">Education</button>
+            <button >Projects</button>
+            <button id="interests-button" onclick="moveToInterest()">Interests</button>
             </div>
         </div>
-        <div class="flex_hor">
+        <div class="flex-hor">
             <div>
                 <h1 style="margin-top:50%;"> HI ! I am </h1>
-                <h1 style="color:#fca61f";>Nourish Cherish</h1>
-                <h3>I dont just code. I also teach computers how to compile code</h2>
+                <h1 style="color:#fca61f;">Nourish Cherish</h1>
+                <h3>I dont just code. I also teach computers how to compile code</h3>
             </div>
-            <img id="pfp"src="images/pfp_sps.png"/>
+            <img id="pfp" src="images/pfp_sps.png" alt="profile picture"/>
         </div>
-        <div class="flex_hor">
-            <h1 style="color:#fca61f";>Education</h1>
+        <div class="flex-hor" id="education">
+            <h1 style="color:#fca61f;">Education</h1>
             <div class="card">
-                <h2 >Computer Engineering Co-op (2019-2024)</h1>
+                <h2>Computer Engineering Co-op (2019-2024)</h2>
                 <p>I am a third year Computer Engineering Coop student at the University of Waterloo.
                 Taken courses on Introduction to programming, Data structure and algorithms,Sytems programming and concurrency, Real time operating systems development and Computer architectures</p>
             </div>
         </div>
-        <div class="flex_hor">
-            <h1 style="color:#fca61f;margin:auto";>About</h1>
+        <div class="flex-hor" id="about">
+            <h1 style="color:#fca61f;margin:auto;">About</h1>
             <div class="card">
-                <h2 >Me</h1>
+                <h2 >Me</h2>
                 <p>I enjoy learning about what happening under the hood of operating systems</h1>
                 I have experience in data structures, algorithms, operating systems and android development through school and personal projects
                 I have done 4 internships so far in software as well as firmware development.
@@ -46,11 +45,10 @@
                 Building a whole operating system for Keil microprocessor right now. Pretty fun :)
                 </p>
             </div>
-
         </div>
-        <div class="flex_hor">
-            <h1 style="color:#fca61f";>Experience</h1>
-            <div id="experience_view">
+        <div class="flex-hor" id="experience">
+            <h1 style="color:#fca61f;">Experience</h1>
+            <div id="experience-view">
             <div class="coops">
                 <h2>RBC</h2>
                 <p>Worked as software developer intern at RBC in the RCPS team. Worked with Java,Kafka,Springboot and some Devops</p>
@@ -65,10 +63,10 @@
             </div>
         </div>
         </div>
-        <div class="flex_hor">
-            <h1 style="color:#fca61f";>Education</h1>
+        <div class="flex-hor" id="interest">
+            <h1 style="color:#fca61f;">Interests</h1>
             <div class="card">
-                <h2 >Soccer, Video games, Investing, travelling</h1>
+                <h2>Soccer, Video games, Investing, travelling</h2>
             </div>
         </div>
          </div>
