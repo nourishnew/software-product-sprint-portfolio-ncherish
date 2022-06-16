@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: row;
 }
+.prim_color{
+  color:#fca61f;
+}
 
 #scroll-buttons {
   margin-left: auto;
@@ -15,6 +18,34 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+form{
+  margin:auto;
+  max-width: 70em;
+}
+textarea{
+  border: 1px solid antiquewhite;
+  border-radius: 10px;
+  resize:none;
+  padding:10px;
+  font-family: 'Nunito Sans', sans-serif;
+  margin:10px;
+}
+#form-submit {
+  margin: auto;
+  width: 50%;
+  border: 1px solid antiquewhite;
+  background-color: #fca61f;
+  border-radius: 25px;
+  color: antiquewhite;
+  font: bold medium/1.2 Arial, sans-serif;
+  padding: 15px;
+  cursor: pointer;
+  max-width: 25em;
 }
 
 button {
@@ -26,6 +57,7 @@ button {
   margin: 5px;
   padding: 15px;
 }
+
 
 button:hover {
   background-color: antiquewhite;
@@ -52,7 +84,6 @@ h3 {
   color:#242d49;
   font-family: 'Indie Flower', cursive;
   font-size: small;
-
 }
 
 #experience-view {
@@ -69,6 +100,23 @@ h3 {
 p {
   color: #242d49;
   font-family: 'Montserrat', sans-serif;
+}
+.font-style{
+  font-family: 'Montserrat', sans-serif;
+}
+.box-shadow{
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.margin-div{
+  padding: 5em;
+  margin: 5em;
+}
+.margin-left{
+  margin-left:10px;
+}
+.margin-top{
+  margin-top:10px;
 }
 
 .card {
