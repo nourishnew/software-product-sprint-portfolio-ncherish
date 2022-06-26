@@ -1,74 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    s<meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-        <div id = "nav-bar">
-            <button >Home</button>
-            <div id="scroll-buttons">
-            <button id="about-button" onclick="moveToAbout()">About</button>
-            <button id="experience-button" onclick="moveToExperience()">Experience</button>
-            <button id="education-button" onclick="moveToEducation()">Education</button>
-            <button >Projects</button>
-            <button id="interests-button" onclick="moveToInterest()">Interests</button>
-            </div>
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div id="content">
+    <div id="nav-bar">
+      <button>Home</button>
+      <div id="scroll-buttons">
+        <button id="about-button" onclick="moveToAbout()">About</button>
+        <button id="experience-button" onclick="moveToExperience()">Experience</button>
+        <button id="education-button" onclick="moveToEducation()">Education</button>
+        <button>Projects</button>
+        <button id="interests-button" onclick="moveToInterest()">Interests</button>
+      </div>
+    </div>
+    <div class="flex-hor">
+      <div>
+        <h1 style="margin-top:50%;"> HI ! I am </h1>
+        <h1 class="prim-color">Nourish Cherish</h1>
+        <h3>I dont just code. I also teach computers how to compile code</h3>
+      </div>
+      <img id="pfp" src="images/pfp_sps.png" alt="profile picture" />
+    </div>
+    <div class="flex-hor" id="education">
+      <h1 class="prim-color">Education</h1>
+      <div class="card">
+        <h2>Computer Engineering Co-op (2019-2024)</h2>
+        <p>I am a third year Computer Engineering Coop student at the University of Waterloo.
+          Taken courses on Introduction to programming, Data structure and algorithms,Systems programming and
+          concurrency, Real time operating systems development and Computer architectures</p>
+      </div>
+    </div>
+    <div class="flex-hor" id="about">
+      <h1 style="margin:auto" class="prim-color">About</h1>
+      <div class="card">
+        <h2>Me</h2>
+        <p>I enjoy learning about what happens under the hood of operating systems.
+          I have experience in data structures, algorithms, operating systems and android development through
+          school and personal projects
+          I have done 4 internships so far in software as well as firmware development.
+          Learning Android development during free time.
+          Building a whole operating system for Keil microprocessor right now. Pretty fun :)
+        </p>
+      </div>
+    </div>
+    <div class="flex-hor" id="experience">
+      <h1 class="prim-color">Experience</h1>
+      <div id="experience-view">
+        <div class="coops">
+          <h2>RBC</h2>
+          <p>Worked as software developer intern at RBC in the RCPS team. Worked with Java,Kafka,Springboot
+            and some Devops</p>
         </div>
-        <div class="flex-hor">
-            <div>
-                <h1 style="margin-top:50%;"> HI ! I am </h1>
-                <h1 style="color:#fca61f;">Nourish Cherish</h1>
-                <h3>I dont just code. I also teach computers how to compile code</h3>
-            </div>
-            <img id="pfp" src="images/pfp_sps.png" alt="profile picture"/>
+        <div class="coops">
+          <h2>Ford</h2>
+          <p>Worked in bootloader team. Wrote kernel level code on Fords custom microprocessor to debug and
+            fix issues</p>
         </div>
-        <div class="flex-hor" id="education">
-            <h1 style="color:#fca61f;">Education</h1>
-            <div class="card">
-                <h2>Computer Engineering Co-op (2019-2024)</h2>
-                <p>I am a third year Computer Engineering Coop student at the University of Waterloo.
-                Taken courses on Introduction to programming, Data structure and algorithms,Sytems programming and concurrency, Real time operating systems development and Computer architectures</p>
-            </div>
+        <div class="coops">
+          <h2>Shomigo</h2>
+          <p>Worked as a software engineering intern in the web app team. Built several front end components
+            using React.js. Built backend servers using Express and database scripts for neo4j graph
+            database</p>
         </div>
-        <div class="flex-hor" id="about">
-            <h1 style="color:#fca61f;margin:auto;">About</h1>
-            <div class="card">
-                <h2 >Me</h2>
-                <p>I enjoy learning about what happening under the hood of operating systems</h1>
-                I have experience in data structures, algorithms, operating systems and android development through school and personal projects
-                I have done 4 internships so far in software as well as firmware development.
-                Learning Android development during free time.
-                Building a whole operating system for Keil microprocessor right now. Pretty fun :)
-                </p>
-            </div>
-        </div>
-        <div class="flex-hor" id="experience">
-            <h1 style="color:#fca61f;">Experience</h1>
-            <div id="experience-view">
-            <div class="coops">
-                <h2>RBC</h2>
-                <p>Worked as software developer intern at RBC in the RCPS team. Worked with Java,Kafka,Springboot and some Devops</p>
-            </div>
-            <div class="coops">
-                <h2>Ford</h2>
-                <p>Worked in bootloader team. Wrote kernel level code on Fords custom microprocessor to debug and fix issues</p>
-            </div>
-            <div class="coops">
-                <h2>Shomigo</h2>
-                <p>Worked as a software engineering intern in the web app team. Built several front end components using React.js. Built backend servers using Express and database scripts for neo4j graph database</p>
-            </div>
-        </div>
-        </div>
-        <div class="flex-hor" id="interest">
-            <h1 style="color:#fca61f;">Interests</h1>
-            <div class="card">
-                <h2>Soccer, Video games, Investing, travelling</h2>
-            </div>
-        </div>
-         </div>
-  </body>
+      </div>
+    </div>
+    <div class="flex-hor" id="interest">
+      <h1 class="prim-color">Interests</h1>
+      <div class="card">
+        <h2>Soccer, Video games, Investing, travelling</h2>
+      </div>
+    </div>
+    <form method="POST" action="/form-handler">
+      <div class="flex-col box-shadow margin-div" style="width:50%;margin:auto;">
+        <h1>Want more info? Contact me</h1>
+        <label for="name" class="font-style margin-left margin-top">Name:</label>
+        <textarea id="name" name="name-text"></textarea>
+        <label for="email" class="font-style margin-left margin-top">Email:</label>
+        <textarea id="email" name="email-text"></textarea>
+        <label for="other" class="font-style margin-left margin-top">Other:</label>
+        <textarea id="other" name="other-text" class="font-style margin-left margin-top"></textarea>
+        <input type="submit" id="form-submit" />
+      </div>
+    </form>
+  </div>
+</body>
+
 </html>
