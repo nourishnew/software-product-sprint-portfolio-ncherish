@@ -1,5 +1,8 @@
 package com.google.sps.data;
 
+/**
+ * Java class to store contact details
+ */
 public final class Contact {
   private final String name;
   private final String email;
