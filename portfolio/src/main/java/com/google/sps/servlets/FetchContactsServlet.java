@@ -34,7 +34,7 @@ public class FetchContactsServlet extends HttpServlet {
       String email = entity.getString("email");
       String name = entity.getString("name");
       String other = entity.getString("other");
-      Contact task = new Contact(name,email,other);
+      Contact task = new Contact(name, email, other);
       tasks.add(task);
     }
     Gson gson = new Gson();
