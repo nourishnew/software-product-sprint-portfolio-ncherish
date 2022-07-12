@@ -31,3 +31,25 @@ function moveToAbout(){
     var element = document.getElementById("about");
     element.scrollIntoView({behavior: "smooth"});
 }
+
+/** Fetches tasks from the server and adds them to the DOM. */
+function loadTasks() {
+  fetch('/fetch-contacts').then(response => response.json()).then((tasks) => {
+    const taskListElement = document.getElementById('contact-list');
+    tasks.forEach((task) => {
+      taskListElement.appendChild(createTaskElement(task));
+    })
+  });
+}
+
+/** Creates an element that represents a task, including its delete button. */
+function createTaskElement(task) {
+  const node = document.createElement("div");
+  const contact = document.createElement('h2');
+  contact.innerText="Name: "+task.name;
+  const email = document.createElement('span');
+  email.innerText = "Email: "+ task.email.substring(0,4)+"******";
+  node.appendChild(contact);
+  node.appendChild(email);
+  return node;
+}
