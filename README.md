@@ -1,6 +1,6 @@
-# Google Software Product Sprint
+# Built during Google Software Product Sprint 2022
 
-This repo contains Nourih's portfolio and SPS projects.
+This repo contains a project I built for Google Software Product Sprint 2022
 
 To get started:
 
